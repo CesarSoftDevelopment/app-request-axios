@@ -4,9 +4,6 @@
 		<meta charset="UTF-8">
 
 		<title>Mentor</title>
-		
-		<!-- JQuery -->
-		<script src="js/jquery-2.2.1.js"></script>
 
 		<!-- bootstrap - link cdn -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -29,35 +26,35 @@
 			
 		</nav>
 
-	    <div class="container">
+	    <div id="divPrincipal" class="container">
 
-			<form class="form-cadastro" action="/usersrg" method="post">
+			<form id="form" class="form-cadastro">
 			
 				<div class="row">
 					<div class="col-xs-4">
 						<div class="form-group">
 							<label for="name" class="col-sm-2 col-form-label">Name</label>
-							<input type="text" value="" class="form-control" id="name" name="name" placeholder="Name">
+							<input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
 						</div>
 					</div>
 					
 					<div class="col-xs-4">
 						<div class="form-group">
 							<label for="user" class="col-sm-2 col-form-label">User</label>
-							<input type="text" value="" class="form-control" id="user" name="user" placeholder="User">
+							<input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuário">
 						</div>
 					</div>
 					
 					<div class="col-xs-4">
 						<div class="form-group">
 							<label for="password" class="col-sm-2 col-form-label">Password</label>
-							<input type="password" value="" class="form-control" id="password" name="password" placeholder="Password">
+							<input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
 						</div>
 					</div>
 					<div class="col-xs-4">
 						<div class="form-group">
 							<label for="email" class="col-sm-2 col-form-label">Email</label>
-							<input type="email" value="" class="form-control" id="email" name="email" placeholder="Email">
+							<input type="email" class="form-control" id="email" name="email" placeholder="E-mail">
 						</div>
 					</div>
 
@@ -66,27 +63,20 @@
 				<div class="form-group row">
 				
         			<div class="col-xs-2">
-						<center>
-							<input type="radio" id="left-item" name="sex" value="feminine"> Feminine
-						</center>
+						<label for="sexo" class="col-sm-2 col-form-label">Sexo</label>
+						<input type="text" class="form-control" id="sexo" name="sexo" placeholder="Digite seu sexo">
         			</div>
 					<div class="col-xs-3"></div>
-
-					<div class="col-xs-2">
-						<center>
-							<input type="radio" id="left-item" name="sex" value="masculine"> Masculine
-						</center>
-        			</div>
-
-
 				</div>		
 				
 			
 				<div class="form-group row">
-					<button style="margin-left: 1%" type="submit" class="btn btn-primary">Confirmar cadastro</button>
+					<button id="btn" style="margin-left: 1%" type="submit" class="btn btn-primary">Confirmar cadastro</button>
 				</div>
                 
 			</form>
-	    </div>	
+	    </div>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
