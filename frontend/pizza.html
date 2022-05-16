@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+        .img-fluid {
+            width: 222px;
+            height: 155px;
+        }
+
+        .espacamento {
+            margin-top: 12%;
+            margin-left: 12%;
+        }
+
+        .background {
+            background-color: #ebebeb;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body class="background">
+    <nav class="navbar navbar-default navbar-static-top">
+        <h1>Pedidos</h1>
+    </nav>
+
+    <div class="card espacamento" style="width: 18rem;">
+        <img src="./img/brigadeiro.jpg" class="img-fluid " alt="">
+        <div class="card-body">
+          <h4 class="card-title">Brigadeiro</h4>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Tamanho</option>
+            <option value="1">8 pedaços</option>
+            <option value="2">12 pedaços</option>
+          </select>
+          <div style="margin-top: 12%">
+        <input type="button" name="mais" id="mais" value="+" />
+        <span id="qtd"></span>
+        <input type="button" name="menos" id="menos" value="-" />
+    </div>
+<script src="js/function.js"></script>
+</body>
+
+</html>
