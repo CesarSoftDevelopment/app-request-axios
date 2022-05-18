@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+        .background {
+            background-color: #ebebeb;
+        }
+
+        .espacamento-interno {
+            margin-left: 80px;
+            margin-top: 3%;
+        }
+
+        .espacamento-global {
+            margin-left: 27%;
+            margin-top: 3%;
+            
+        }
+
+        .espacamento-botao {
+            margin-left: 45%;
+            margin-top: 5%;
+        }
+
+        .espacamento-botao-nav {
+            margin-left: 2%;
+        }
+        
+    </style>
+</head>
+
+<body class="background">
+    <nav class="navbar navbar-default navbar-static-top">			
+            <a href="index.html"><button type="button" class="btn btn-success espacamento-botao-nav" style="margin-top: 10px;">Voltar</button></a>
+    </nav>
+
+    <div class="container">
+        <h2 style="text-align: center ;">Escolha o tamanho da pizza</h2>
+        <div class="row">
+            <div class="col-md-2 espacamento-global">
+                <img  style="width: 200px ;" src="img/pizza_4.png">
+                <div class="espacamento-interno">
+                    <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    4 Pedaços
+                </div>
+            </div>
+
+            <div class="col-md-2 espacamento-interno">
+                <img  style="width: 200px ;" src="img/pizza_8.png">
+                <div class="espacamento-interno">
+                    <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    8 Pedaços
+                </div>
+            </div>
+
+            <div class="col-md-8 espacamento-botao">
+                <a href="register.html"><button  class="btn btn-primary">Confirmar</button></a>
+            </div>
+        </div>
+        
+    </div>
+
+<script src="js/function.js"></script>
+</body>
+
+</html>
